@@ -1,0 +1,8 @@
+# ignore !!!_core directory
+!!!_core/
+
+# ignore backups directory
+backups/
+
+#ignore app/includes/init_local.php
+app/includes/init_local.php
