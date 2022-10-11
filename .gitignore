@@ -6,3 +6,6 @@ backups/
 
 #ignore app/includes/init_local.php
 app/includes/init_local.php
+
+#ignore app/includes/config_remote.php
+app/includes/config_remote.php
