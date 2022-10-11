@@ -13,7 +13,6 @@ function classAutoLoader($class){
 //function lets start more AUTOLOADER per 1 time. spl_autoload_register — Register given function as __autoload() implementation
 spl_autoload_register('classAutoLoader');
 
-
 //redirect function
 function redirect($location) {
         header("Location: {$location}");

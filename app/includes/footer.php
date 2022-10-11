@@ -1,4 +1,3 @@
-
         <footer>
         <div class="main_page_footer">              
               <div class="text-center">

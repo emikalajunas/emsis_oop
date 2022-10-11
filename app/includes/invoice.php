@@ -225,29 +225,17 @@ $records = Records::find_by_id($record_from_checkbox);
 
 <?php }} ?>
   
-   <?php
-
-
+<?php
 //Record IDs DATA converts to string
 $records_from_checkbox = implode("", $records_from_checkbox); 
 echo $records_from_checkbox;
 
-?> 
-   
-   
-   
-   
-   
-    </table>
+?>  
+     </table>
     </div>         
     </div> 
  <!--Invoice content table row start-->
- 
 
- 
-  
-  
-  
 <!--Invoice total sum row end--> 
    <div class="row">      
      <div class="col-12">

@@ -1,6 +1,5 @@
 <?php
 
-echo "invoices_list.php"
-
+echo "invoices_list.php file is connected"
 
 ?>
