@@ -62,7 +62,6 @@ if($user_found){
 }
 
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
