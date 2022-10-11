@@ -26,7 +26,7 @@ class Clients extends Db_object
     }
 
 } //END of Class Clients
-//instantiating class Invoices
+
 $clients = new Clients();
 
 ?>

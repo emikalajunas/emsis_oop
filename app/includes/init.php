@@ -2,11 +2,12 @@
 //DIRECTORY_SEPARATOR chooses by win or OS / \ separator autom
 defined('DS') ? null : define ('DS', DIRECTORY_SEPARATOR); 
 
-//C:\wampn64\www\udemyb3_PHP_OOP <- work Acer pc
+//REMOTE server
+//define ('SITE_ROOT', DS . 'home'. DS . 'addparklt' . DS . 'domains' . DS . 'emsis.lt' . DS . 'public_html' . DS . 'OOP');
+
+//LOCAL server
 define ('SITE_ROOT', DS . 'wampn64' . DS . 'www' . DS . 'toshiba_files' . DS . 'emsis' . DS . '1.5');
 
-//C:\xampp <- home Toshiba pc
-//define ('SITE_ROOT', DS . 'xampp' . DS . 'htdocs' . DS . 'emsis' . DS . '1.5');
 
 //defines constant  INCLUDES_PATH_CLASSES to get path of classes
 defined('INCLUDES_PATH_CLASSES') ? null : define ('INCLUDES_PATH_CLASSES', SITE_ROOT . DS . 'app' . DS . 'includes' . DS . 'classes');
