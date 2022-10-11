@@ -1,7 +1,6 @@
 <?php require_once 'app/includes/init.php'; ?>
 
 <?php
-
 //1. $_GETs lang, 2. sets $_SESSION, 3. includes language file 
 if(isset($_GET['lang']) && !empty($_GET['lang'])){
     
@@ -67,17 +66,17 @@ if($user_found){
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <!-- Custom CSS -->
+<!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
     
-    <!--Google fonts-->
+<!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
@@ -88,8 +87,8 @@ if($user_found){
           <div class="container">
               <div class="row justify-content-md-center">
                     <div class="col-md-6">                   
-                        <!--Login form start-->                        
-                         <!--   Language selector start-->
+<!--Login form start-->                        
+<!--   Language selector start-->
                         <div class="login_page_form">  
                        <form action="" method="get" id="language_form">
                                 <img src="images/logo/2021_08_10_logo.png" alt="logo_image" class="rounded mx-auto d-block mb-3" width="100" height="100">
@@ -99,11 +98,11 @@ if($user_found){
                                   <option value="lt" <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'lt'){echo "selected";} ?>>Lietuviškai</option>
                                 </select> 
                        </form>
-                        <!--   Language selector end     -->  
-                          <!--   Text inputs block start-->
-                            <!--Error message start-->
+<!--   Language selector end     -->  
+<!--   Text inputs block start-->
+<!--Error message start-->
                            <p><?php echo $the_message; ?></p>
-                            <!--Error message end-->
+<!--Error message end-->
                         <form  action="" method="post">
                                <div class="input-group">
                                    <input type="text" name="username" placeholder="<?php echo _LOGIN_USERNAME;?>" class="form-control">
@@ -119,23 +118,22 @@ if($user_found){
                                </div>
                         </form>
                         </div> 
-                         <!--   Text inputs block end--> 
-                        <!--Login form end-->                                            
+<!--   Text inputs block end--> 
+<!--Login form end-->                                            
                         </div>
                   </div>
-          </div>        
+          </div>     
           
-          
-      <!-- Bootstrap Bundle with Popper -->
+<!-- Bootstrap Bundle with Popper -->
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-      <!--Language change start-->
+<!--Language change start-->
     <script>        
         function changeLanguage(){
            document.getElementById('language_form').submit();
         }        
     </script>
-    <!--Language change start end-->
+<!--Language change start end-->
     <footer>         
           <div class="login_page_footer">              
               <div class="text-center">
